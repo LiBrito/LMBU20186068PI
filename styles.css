@@ -1,0 +1,404 @@
+
+/* Start Generals*/
+/*General Header CSS*/
+body{
+	margin: 0px;
+	padding: 0;
+}
+.gridin{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+header{
+	height: 100px;
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+}
+
+#header-top{
+	width: 800px;
+}
+header h2{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	width: 100%
+	
+}
+header a, h1{
+	color: rgb(250, 250, 250);
+}
+/*Navbar styles*/
+nav{
+	background-color: rgb(0, 0, 0);
+	box-shadow: none; 
+	font-size: 16px;
+	font-family: 'Black Han Sans', sans-serif;
+	width: 100%;
+	margin-right: 20px;
+
+}
+.navbar{
+	overflow: hidden;
+	text-decoration: none;
+	transition: 5s;
+}
+.navbar-conteiner{
+	display: felx;
+}
+.wrapper{
+	display: flex;
+	margin-left: 200px;
+}
+.wrapper a{
+	padding-right: 20px;
+	border-bottom: 1px solid transparent;
+}
+.wrapper a:hover{
+	padding: 20px 20px 20px 20px;
+	background: rgb(36, 24, 100);
+	border-radius: 5em;
+
+}
+.navbar a{
+	margin-top: 50px;
+	margin-left: 50px;
+	display: flex;
+	padding: 50% 50%;
+	justify-content: space-between;
+}
+.navbar a:hover{
+		color: lightseagreen;
+}
+/*General Footer*/
+footer{
+	font-family: 'Dosis', sans-serif;
+	background-color: #000000;
+	text-align: center;
+}
+/*Generals Social Bar*/
+#socialbar a{
+	text-align: right;
+	font-size:40px;
+	color: #8baa8b;
+	justify-content: space-between;
+}
+header a, p{
+	color: #f8f8f8;
+
+}
+footer a, p{
+	color: #f8f8f8;
+}
+footer{
+	display: flex;
+	height: 300px;
+	justify-content: space-between;
+}
+li{
+	text-decoration-style: none;
+}
+.soc-info{
+	justify-content: left;
+	padding: 0.9em;
+	margin-left: 400px;
+	margin-top: 50px;
+}
+.map{
+	justify-content: right;
+	padding: 0.99em;
+	margin-right: 400px;
+	margin-top: 50px;
+}
+/*Portafolio Styles*/
+.portafolio-items-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+.portafolio-item-wrapper{
+	position: relative;
+}
+.portafolio-img-background{
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+.image-text-wrapper{
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.logo-wrapper img{
+	width: 50%;
+	margin-bottom: 20px;
+}
+.image-text-wrapper p{
+	transition: 1s;
+	color: transparent;
+	}
+
+.image-text-wrapper:hover p{
+	font-weight: 600;
+	color: lightseagreen
+}
+.img-darken{
+	transition: 1s;
+	filter: brightness(10%);
+}
+/*Carrusel*/
+.slideShow-title{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	width: 800px;
+	background:  rgb(36, 24, 100);
+	border: solid transparent;
+	padding: 20px 20px;
+	margin-top: 15px;
+	margin-left: 25%;
+	margin-bottom: 5px;
+	border-top-left-radius: 0.9em;
+	border-bottom-right-radius: 0.9em;
+
+}
+.slideShow-title h2{
+	text-transform: uppercase;
+	font-size: 40;
+	align-content: center;
+	color: whitesmoke;
+
+}
+.slideshow-container {
+	max-width: 1000px;
+	max-height: 500px;
+	position: relative;
+	margin: auto;
+  }
+.slideshow-container img{
+	height: 500px;
+}
+
+  .mySlides {
+	display: none;
+  }
+  
+ 
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+ 
+  .text {
+	color: #fd0808;
+	font-size: 30px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	font-display: bold;
+  }
+  
+ 
+  
+ 
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+/*First Page CSS*/
+
+/*Start Second page (conocenos)*/
+/*Títulos y texto*/
+#ajiedhistory h3, #mision h3, #vision h3, #directive h3{
+	text-align: center;
+	font-size: 42px;
+}
+#ajiedhistory p, #mision p, #vision p, #directive p{
+	text-align: justify;
+	font-family: 'Stylish', sans-serif;
+	font-size: 24px;
+	color: #000;
+}
+#ajiedhistory a{
+	font-family: 'Black And White Picture', sans-serif;
+	font-size: 24px;
+}
+#directive h6{
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+}
+.history, .mv{
+	width: 1000px;
+	margin-left: 13%;
+}
+/*Images in the page*/
+#directive img{
+	width: 250px;
+	height: 200px;
+	padding: 0.5%
+	margin: 0.1%;
+}
+#ajiedhistory img{
+	width: 400px;
+	height: 400px;
+	margin: 0 30%;
+	
+}
+#mision img{
+	width: 80%;
+	height: 500px;
+	margin: 0 10%;
+}
+#vision img{
+	width: 398px;
+	height: 398px;
+	padding: 0.5%;
+	margin: 0.1%;
+}
+#vision p{
+	display: inline-block;
+	width: 400px;
+	height: 300px;
+	margin: 0.5%;
+}
+.directiva li{
+	width: 300px;
+	height: 300px;
+	padding: 0.5%;
+	float: left;
+}
+.directiva{
+	margin: 3px 16px 16px 5px;
+}
+.clear{
+	clear: both;
+	height: 0;
+	display: block;
+}
+
+/*End of the second page*/
+/*Star of the contact page*/
+/*fonts*/
+#contactos a{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+#contactos h4, #contactos h5, #contactos h6, #contactos h3, #contactos p{
+	text-align: center;
+}
+.mapita {
+	margin-left: 35%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 32%;
+	padding: 20px;
+	background: #000
+}
+.rss-feed{
+	margin-left: 30%;
+	margin-top: 10px;
+	margin-bottom: 5%;
+	margin-right: 30%;
+	padding: 20px;
+	background: #000
+}
+/*End 3th pages*/
+/*Start Publicaciones page*/
+.publicaciones{
+	width: 95%;
+	margin: 0 2.5%;
+}
+.publicaciones h5{
+	font-size: 24px;
+	font-family: 'Black And White Picture', sans-serif;
+	text-align: center;
+	color: #000;
+}
+.publicaciones img{
+	width: 250px;
+	height: 250px;
+	padding: 0.1%;
+	margin: 0.5%;
+}
+.publicaciones li{
+	width: 300px;
+	height: 300px;
+	padding: 0.5%;
+	margin: 0.5%;
+	float: left;
+}
+
+/*End 4th page*/
+/*Servicios*/
+.agenda img{
+	width: 200px;
+	height: 200px;
+	padding: 0.1%;
+	margin: 0.5%;
+
+}
+.agenda h4{
+	font-family: 'Gloria Hallelujah', cursive;
+	color: #000;
+}
+.agenda li{
+	width: 300px;
+	padding-right: 20px;
+	float: left;
+}
+.agenda{
+	display: flex;
+	justify-content: space-between;
+	
+}
